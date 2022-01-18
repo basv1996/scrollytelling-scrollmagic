@@ -125,3 +125,23 @@ body {
   .third-section .images-wrapper img {
     position: absolute;
   }
+
+  .forth-section {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+  
+  .forth-section .images-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .forth-section .images-wrapper img {
+    position: absolute;
+  }

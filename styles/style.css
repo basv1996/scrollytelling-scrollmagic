@@ -81,3 +81,21 @@ body {
     top: 370px;
     right: 10px;
   }
+
+  .second-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+
+  .second-section .images-wrapper {
+    position: absolute;
+    display: flex;
+    padding: 200px 0;
+    top: 20%;
+    overflow: hidden;
+  }

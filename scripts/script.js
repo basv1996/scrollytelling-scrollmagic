@@ -62,4 +62,23 @@ document.addEventListener('DOMContentLoaded', () => {
     .setTween(timeline) // voeg de timeline variabele toe als 
     .setPin('.first-section') // ga niet voorbij de eerste sectie voordat de animatie is geweest
     .addTo(controller)
+
+
+    // section 2
+
+    let timeline2 = new TimelineMax()
+    timeline2.to('.top .image-container', 4, {
+        height: 0
+        //in de css staat de height op 100% en hier verander ik de hoogte naar 0%
+    })
+
+    let Scene2 = new ScrollMagic.Scene({
+        triggerElement: '.second-section',
+        duration: '100%',
+        triggerHook: 0, // als de eerste sectie de bovenkant raakt van het scherm begin dan met animeren
+        offset: '100' // de animatie start als de eerste sectie 100px van de top van het scherm af zit
+    })
+    .setTween(timeline2) // voeg de timeline variabele toe als 
+    .setPin('.second-section') // ga niet voorbij de eerste sectie voordat de animatie is geweest
+    .addTo(controller)
 })
